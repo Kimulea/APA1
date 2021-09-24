@@ -38,7 +38,7 @@ namespace APA1
         }
         static void Main(string[] args)
         {
-            ulong n = 82;
+            ulong n = 10;
 
             DateTime start = new DateTime();
             DateTime end = new DateTime();
@@ -46,13 +46,13 @@ namespace APA1
             Console.WriteLine("n = " + n);
 
             Console.WriteLine("Recursion:");
-            /*start = DateTime.Now;
+            start = DateTime.Now;
             Console.WriteLine("Result = " + FibRec(n));
             end = DateTime.Now;
             TimeSpan ts1 = (end - start);
             Console.WriteLine("Execution time = " + String.Format("{0:F10}", ts1.TotalSeconds));
             Console.WriteLine("Nr iterations = " + cont1);
-            Console.WriteLine();*/
+            Console.WriteLine();
             Console.WriteLine("Nan");
             Console.WriteLine();
 
