@@ -31,14 +31,14 @@ namespace APA1
             return list[(int)n];
         }
 
-        static long FibFormula(ulong n)
+        static ulong FibFormula(ulong n)
         {
             cont3++;
-            return (long) Math.Round(Math.Pow((1 + Math.Sqrt(5)) / 2, n + 1) / Math.Sqrt(5));
+            return (ulong) Math.Round(Math.Pow((1 + Math.Sqrt(5)) / 2, (ulong) n + 1) / Math.Sqrt(5));
         }
         static void Main(string[] args)
         {
-            ulong n = 60;
+            ulong n = 82;
 
             DateTime start = new DateTime();
             DateTime end = new DateTime();
@@ -46,13 +46,16 @@ namespace APA1
             Console.WriteLine("n = " + n);
 
             Console.WriteLine("Recursion:");
-            start = DateTime.Now;
+            /*start = DateTime.Now;
             Console.WriteLine("Result = " + FibRec(n));
             end = DateTime.Now;
             TimeSpan ts1 = (end - start);
             Console.WriteLine("Execution time = " + String.Format("{0:F10}", ts1.TotalSeconds));
             Console.WriteLine("Nr iterations = " + cont1);
+            Console.WriteLine();*/
+            Console.WriteLine("Nan");
             Console.WriteLine();
+
 
             Console.WriteLine("Linear:");
             start = DateTime.Now;
